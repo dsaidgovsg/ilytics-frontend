@@ -24,12 +24,8 @@
 
 <script>
 
-import { Slide } from 'vue-burger-menu'; 
 
 export default{
-    components: {
-        Slide
-    },
     methods: {
     contact() {
         this.$emit('contact', true);

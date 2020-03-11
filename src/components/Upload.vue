@@ -470,7 +470,6 @@ export default {
       this.uploadCondition = false;
       axios.post('https://ilytics-backend.com/upload',formData)
         .then((response) => {
-          console.log(response);
           this.loading = false;
           this.imageBytes = response.data.img;
           this.stat = response.data.stat;
