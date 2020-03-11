@@ -468,7 +468,7 @@ export default {
       formData.append('file',this.file);
       this.loading = true;
       this.uploadCondition = false;
-      axios.post('http://ec2-54-169-58-247.ap-southeast-1.compute.amazonaws.com:8080/upload',formData)
+      axios.post('https://ilytics-backend.com/upload',formData)
         .then((response) => {
           console.log(response);
           this.loading = false;
