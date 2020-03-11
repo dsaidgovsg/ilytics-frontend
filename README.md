@@ -5,7 +5,9 @@ This repo contains the frontend(vue.js) for ilytics.sg
 
 ## Run Instruction
 
-- `npm run`
+- `npm install`
+ 
+- `npm run serve`
 
 ## Deployment Instruction
 
