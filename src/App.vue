@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-    <Upload />
+    <Main />
   </div>
 </template>
+
 <script>
-import Upload from './components/Upload.vue'
+import Main from './components/Main.vue'
 //Zen Lee Cai Neng 
 //Jordan Chia Changrong
 //Adam William Petrie
@@ -12,7 +13,7 @@ import Upload from './components/Upload.vue'
 export default {
   name: 'app',
   components: {
-    Upload
+    Main
   }
 }
 </script>
