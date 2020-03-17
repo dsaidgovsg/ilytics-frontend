@@ -1,6 +1,7 @@
 ![alt text](logo.png)
 
 ## Frontend
+
 This repo contains the frontend(vue.js) for ilytics.sg 
 
 ## Run Instruction
@@ -9,14 +10,17 @@ This repo contains the frontend(vue.js) for ilytics.sg
  
 - `npm run serve`
 
-## Deployment Instruction
+## Auto-Deployment
+
+This repo has CI/CD setup. 
+
+To deploy manually:
 
 - `npm run build` to generate `dist` folder
 
-- Upload the content in `dist` to s3 ilytics bucket (This part will need to automate)
+- Upload the content in `dist` to s3 ilytics bucket
 
-## Things to do
-Refactor the code
+
 
 
 
