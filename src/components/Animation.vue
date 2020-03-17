@@ -87,11 +87,4 @@
 </style>
 
 <script>
-//comment
-export default {
-  data() {
-    return {};
-  },
-  methods: {}
-};
 </script>

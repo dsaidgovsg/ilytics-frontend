@@ -270,8 +270,6 @@ export default {
   },
   props: {
     parentData: Object
-  },
-  components: {},
-  methods: {}
+  }
 };
 </script>

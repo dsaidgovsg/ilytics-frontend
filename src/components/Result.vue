@@ -42,7 +42,6 @@ export default {
   props: {
     parentData: String
   },
-  components: {},
   methods: {
     viewStats() {
       this.$emit("viewStats");
