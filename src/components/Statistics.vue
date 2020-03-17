@@ -4,7 +4,7 @@
       Total rotifer count
       <div class="total-rotifer-count">{{parentData["rot"] + parentData["1"] + parentData["2"]}}</div>
     </div>
-    <div class="breakdown">Break-down</div>
+    <div class="breakdown">Breakdown</div>
     <div class="breakdown-box">
       <div class="rotifer-text">Rotifer</div>
       <div class="rotifer-text-count">{{parentData["rot"]}}</div>
