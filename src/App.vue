@@ -5,16 +5,16 @@
 </template>
 
 <script>
-import Main from './components/Main.vue'
-//Zen Lee Cai Neng 
+import Main from "./components/Main.vue";
+//Zen Lee Cai Neng
 //Jordan Chia Changrong
 //Adam William Petrie
 //Tan Cai Leng
+//Xu Qunying
 export default {
-  name: 'app',
+  name: "app",
   components: {
     Main
   }
-}
+};
 </script>
-

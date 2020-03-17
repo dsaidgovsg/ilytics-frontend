@@ -1,64 +1,65 @@
 <template>
-    <div class='mainUpload'>
-    <Animation v-show="loading"/>   
-    <div class='upload'>
-    <picture-input 
-      ref="pictureInput"
-      width="300" 
-      height="300" 
-      margin="16" 
-      accept="image/jpeg,image/png" 
-      size="10" 
-      :hideChangeButton="true"
-      :custom-strings="{
+  <div class="mainUpload">
+    <Animation v-show="loading" />
+    <div class="upload">
+      <picture-input
+        ref="pictureInput"
+        width="300"
+        height="300"
+        margin="16"
+        accept="image/jpeg, image/png"
+        size="10"
+        :hideChangeButton="true"
+        :custom-strings="{
         tap: 'Tap here to select a photo <br>from your gallery'
       }"
-      @change="onSubmit"
-      >
-    </picture-input>
+        @change="onSubmit"
+      ></picture-input>
     </div>
-    </div>
+  </div>
 </template>
 
-<style scoped> 
-
+<style scoped>
 .upload {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 </style>
 
 <script>
+//comment
+import axios from "axios";
+import PictureInput from "vue-picture-input";
+import Animation from "./Animation.vue";
 
-import axios from 'axios';
-import PictureInput from 'vue-picture-input';
-import Animation from './Animation.vue';
-
-export default{
-    data() {
+export default {
+  data() {
     return {
       loading: false
-    }
-  },components: {
-    PictureInput, Animation
-  }, methods: {
-    async onSubmit(){
+    };
+  },
+  components: {
+    PictureInput,
+    Animation
+  },
+  methods: {
+    async onSubmit() {
       this.loading = true;
-      this.file = this.$refs.pictureInput.file
+      this.file = this.$refs.pictureInput.file;
       const formData = new FormData();
-      formData.append('file',this.file);
-      axios.post('https://ilytics-backend.com/upload',formData)
-        .then((response) => {
+      formData.append("file", this.file);
+      axios
+        .post("https://ilytics-backend.com/upload", formData)
+        .then(response => {
           const result = [response.data.img, response.data.stat];
-          this.$emit('submission', result);
+          this.$emit("submission", result);
           this.loading = false;
         })
-        .catch((error) => {
+        .catch(error => {
           console.log(error);
         });
     }
-    }
-}
+  }
+};
 </script>
