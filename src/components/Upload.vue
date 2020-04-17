@@ -50,11 +50,12 @@ export default {
       const formData = new FormData();
       formData.append("file", this.file);
       axios
-        .post("https://ilytics-backend.com/upload", formData)
+        .post("http://ilytics-backend.com/upload", formData)
         .then(response => {
           const result = [response.data.img, response.data.stat];
           this.$emit("submission", result);
           this.loading = false;
+          console.log(response.data);
         })
         .catch(error => {
           console.log(error);
