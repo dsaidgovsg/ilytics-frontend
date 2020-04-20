@@ -55,6 +55,7 @@ export default {
           const result = [response.data.img, response.data.stat];
           this.$emit("submission", result);
           this.loading = false;
+          console.log(response.data);
         })
         .catch(error => {
           console.log(error);
