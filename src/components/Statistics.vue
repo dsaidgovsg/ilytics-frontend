@@ -15,7 +15,7 @@
       <div class="two-egg-carrier-text">Two-egg carrier</div>
       <div class="two-egg-carrier-count">{{parentData[2]}}</div>
       <div class="green-bar" v-bind:style=" {top: 342 + 'px', left: 25 + 'px' }"></div>
-      <div class="dead-rotifers-text">Dead rotifers</div>
+      <div class="dead-rotifers-text">Dead rotifer</div>
       <div class="dead-rotifers-count">{{parentData[5]}}</div>
       <div class="red-bar" v-bind:style=" {top: 382 + 'px', left: 24 + 'px' }"></div>
       <div class="ciliates-text">Ciliates</div>
