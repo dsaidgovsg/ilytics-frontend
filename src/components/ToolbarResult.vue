@@ -2,7 +2,7 @@
   <div class="file">
     <md-toolbar class="container">
       <h3 class="md-title">
-        <a href="https://www.ilytics.sg">
+        <a href="http://54.255.193.63:8081/">
           <img src="../assets/back.svg" />
         </a>
       </h3>
