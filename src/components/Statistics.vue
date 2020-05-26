@@ -2,27 +2,27 @@
   <div class="main">
     <div class="total-rotifer">
       Total rotifer count
-      <div class="total-rotifer-count">{{parentData["rot"] + parentData["1"] + parentData["2"]}}</div>
+      <div class="total-rotifer-count">{{parentData["One-Egg-Carrier"] + parentData["Rotifer"]}}</div>
     </div>
     <div class="breakdown">Breakdown</div>
     <div class="breakdown-box">
       <div class="rotifer-text">Rotifer</div>
-      <div class="rotifer-text-count">{{parentData["rot"]}}</div>
+      <div class="rotifer-text-count">{{parentData["Rotifer"]}}</div>
       <div class="green-bar" v-bind:style=" {top: 262 + 'px', left: 24 + 'px' }"></div>
       <div class="one-egg-carrier-text">One-egg carrier</div>
-      <div class="one-egg-carrier-count">{{parentData[1]}}</div>
+      <div class="one-egg-carrier-count">{{parentData["One-Egg-Carrier"]}}</div>
       <div class="green-bar" v-bind:style=" {top: 302 + 'px', left: 24 + 'px' }"></div>
       <div class="two-egg-carrier-text">Two-egg carrier</div>
-      <div class="two-egg-carrier-count">{{parentData[2]}}</div>
+      <div class="two-egg-carrier-count">0</div>
       <div class="green-bar" v-bind:style=" {top: 342 + 'px', left: 25 + 'px' }"></div>
       <div class="dead-rotifers-text">Dead rotifer</div>
       <div class="dead-rotifers-count">{{parentData["Dead"]}}</div>
       <div class="red-bar" v-bind:style=" {top: 382 + 'px', left: 24 + 'px' }"></div>
       <div class="ciliates-text">Ciliates</div>
-      <div class="ciliates-count">{{parentData[4]}}</div>
+      <div class="ciliates-count">{{parentData["Ciliates"]}}</div>
       <div class="red-bar" v-bind:style=" {top: 422 + 'px', left: 24 + 'px' }"></div>
       <div class="clumps-text">Clumps</div>
-      <div class="clumps-count">{{parentData[6]}}</div>
+      <div class="clumps-count">{{parentData["Clumps"]}}</div>
       <div class="red-bar" v-bind:style=" {top: 462 + 'px', left: 24 + 'px' }"></div>
     </div>
   </div>
@@ -36,7 +36,6 @@
   background: #5dd528 0% 0% no-repeat padding-box;
   opacity: 1;
 }
-
 .red-bar {
   position: fixed;
   width: 21px;
@@ -44,7 +43,6 @@
   background: #d54328 0% 0% no-repeat padding-box;
   opacity: 1;
 }
-
 .rotifer-text {
   position: fixed;
   top: 236px;
@@ -57,7 +55,6 @@
   color: #000000;
   opacity: 1;
 }
-
 .rotifer-text-count {
   position: fixed;
   top: 239px;
@@ -70,7 +67,6 @@
   color: #000000;
   opacity: 1;
 }
-
 .one-egg-carrier-text {
   position: fixed;
   top: 276px;
@@ -83,7 +79,6 @@
   color: #000000;
   opacity: 1;
 }
-
 .one-egg-carrier-count {
   position: fixed;
   top: 279px;
@@ -96,7 +91,6 @@
   color: #000000;
   opacity: 1;
 }
-
 .two-egg-carrier-text {
   position: fixed;
   top: 316px;
@@ -109,7 +103,6 @@
   color: #000000;
   opacity: 1;
 }
-
 .two-egg-carrier-count {
   position: fixed;
   top: 319px;
@@ -122,7 +115,6 @@
   color: #000000;
   opacity: 1;
 }
-
 .dead-rotifers-text {
   position: fixed;
   top: 356px;
@@ -135,7 +127,6 @@
   color: #000000;
   opacity: 1;
 }
-
 .dead-rotifers-count {
   position: fixed;
   top: 359px;
@@ -148,7 +139,6 @@
   color: #000000;
   opacity: 1;
 }
-
 .ciliates-text {
   position: fixed;
   top: 396px;
@@ -161,7 +151,6 @@
   color: #000000;
   opacity: 1;
 }
-
 .ciliates-count {
   position: fixed;
   top: 399px;
@@ -174,7 +163,6 @@
   color: #000000;
   opacity: 1;
 }
-
 .clumps-text {
   position: fixed;
   top: 436px;
@@ -187,7 +175,6 @@
   color: #000000;
   opacity: 1;
 }
-
 .clumps-count {
   position: fixed;
   top: 439px;
@@ -200,7 +187,6 @@
   color: #000000;
   opacity: 1;
 }
-
 .breakdown-box {
   position: fixed;
   top: 216px;
@@ -213,7 +199,6 @@
   border-radius: 4px;
   opacity: 1;
 }
-
 .breakdown {
   position: fixed;
   top: 182px;
@@ -243,7 +228,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .total-rotifer-count {
   position: fixed;
   top: 103px;
