@@ -1,25 +1,25 @@
 <img src="logo.png" width="200">
 
-## Frontend
+## Frontend    
 
 This repo contains the frontend(vue.js) for ilytics.sg 
 
-## Run Instruction
+## Update local IP address in .env file    
 
-- `npm install`
+- Change directory to the repo
+- View hidden files in repo
+- Edit .env file and include the following
+> `VUE_APP_IP=<LOCAL_IP_ADDRESS>`
+
+## Local Run Instruction (Docker)  
+
+> The following commands must be executed whenever the *<Local_IP_ADDRESS>* is updated.  
+
+- `docker build . --tag ilytics-fe`
  
-- `npm run serve`
+- `docker run -itd -p 8080:8080 ilytics_fe`  
 
-## Auto-Deployment
-
-This repo has CI/CD setup. 
-
-To deploy manually:
-
-- `npm run build` to generate `dist` folder
-
-- Upload the content in `dist` to s3 ilytics bucket
-
+## Ilytics Frontend is now up and running!
 
 
 
