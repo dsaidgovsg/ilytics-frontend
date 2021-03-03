@@ -17,7 +17,7 @@ This repo contains the frontend(vue.js) for ilytics.sg
 
 - `docker build . --tag ilytics-fe`
  
-- `docker run -itd -p 8080:8080 ilytics_fe`  
+- `docker run -itd -p 8080:8080 ilytics-fe`  
 
 ## Ilytics Frontend is now up and running!
 
