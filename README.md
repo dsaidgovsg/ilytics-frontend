@@ -19,7 +19,7 @@ This repo contains the frontend(vue.js) for ilytics.sg
  
 - `docker run -itd -p 8080:8080 ilytics-fe`  
 
-## Ilytics Frontend is now up and running!
+## Ilytics Frontend is now up and running @<LOCAL_IP_ADDRESS>:8080!
 
 
 
