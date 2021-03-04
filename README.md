@@ -7,6 +7,7 @@ This repo contains the frontend(vue.js) for ilytics.sg
 ## Clone and checkout using the following commands
 
 - `git clone https://github.com/dsaidgovsg/ilytics-frontend.git`
+- Change directory to the cloned folder
 - `git fetch -a`
 - `git checkout -t sfa_handover_fe`
 
