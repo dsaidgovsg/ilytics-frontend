@@ -24,7 +24,7 @@ This repo contains the frontend(vue.js) for ilytics.sg
 - `docker logs ilytics-frontend-container`
 
 The output should be similar to the following:
-> `Starting up http-server, serving dist` 
+> `Starting up http-server, serving dist`  
   `Available on:`  
   `http://127.0.0.1:8080`  
   `http://172.17.0.2:8080`  
