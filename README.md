@@ -13,9 +13,9 @@ This repo contains the frontend(vue.js) for ilytics.sg
 
 ## Local Run Instruction (Docker)  
 
-* The following commands must be executed whenever the **<Local_IP_ADDRESS>** is updated.  
+The following commands must be executed whenever the **<Local_IP_ADDRESS>** is updated.  
 
-- `docker build . --tag ilytics-fe`
+- `docker build . --no-cache --tag ilytics-fe`
  
 - `docker run -itd --name ilytics-frontend-container -p 8080:8080 ilytics-fe`  
 
