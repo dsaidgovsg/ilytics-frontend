@@ -2,7 +2,7 @@
   <div class="file">
     <md-toolbar class="container">
       <h3 class="md-title">
-        <a href="http://www.ilytics.sg/">
+        <a v-bind:href="url">
           <img src="../assets/back.svg" />
         </a>
       </h3>
@@ -28,5 +28,15 @@
 </style>
 
 <script>
+
+var APP_IP = process.env.VUE_APP_IP
+
+export default {
+    data() {
+        return {
+            url:`http://${APP_IP}:8080`
+        }
+    }
+}
 //comment
 </script>
