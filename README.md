@@ -13,8 +13,7 @@ This repo contains the frontend(vue.js) for ilytics.sg
 
 ## Update local IP address in .env file    
 
-- Change directory to the repo
-- View hidden files in repo
+- View hidden files in cloned folder
 - Edit .env file and include the following
 > `VUE_APP_IP=<LOCAL_IP_ADDRESS>`
 
